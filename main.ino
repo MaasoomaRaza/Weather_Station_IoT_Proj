@@ -8,7 +8,7 @@
 #include "DHTesp.h" //DHT11 Library for ESP
  
 #define LED 2 //On board LED
-#define DHTpin 14 //D5 of NodeMCU is GPIO14
+#define DHTpin 0 //D3 of NodeMCU is GPIO0
  
 SFE_BMP180 pressure;
  
@@ -93,7 +93,7 @@ else Serial.println("error starting temperature measurement\n");
  
  
 int rain = analogRead(A0);
-rain = map(rain, 0, 1024, 0, 100);
+  rain = map(rain, 0, 1024, 0, 100);
  
 //Create JSON data
 String data = "{\"Rain\":\""+String(rain)+"\",\"Pressuremb\":\""+String(pmb)+"\",\"Pressurehg\":\""+String(phg)+"\", \"Temperature\":\""+ String(temperature) +"\", \"Humidity\":\""+ String(humidity) +"\"}";
@@ -116,7 +116,7 @@ Serial.println(rain);
  
 void setup()
 {
-Serial.begin(9600);
+Serial.begin(115200);
 Serial.println();
  
 // dht11 Sensor
