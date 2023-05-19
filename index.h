@@ -2,15 +2,15 @@ const char MAIN_page[] PROGMEM = R"=====(
 <!DOCTYPE html>
 <html>
 <head>
-<title>www.how2electronics.com</title>
+<title>Real Time Weather Monitoring System</title>
 </head>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Advent+Pro:400,200);
 *{margin: 0;padding: 0;}
- 
+
 body{
-  background:#544947;
+  background:#ccccff;
   font-family:Montserrat,Arial,sans-serif;
 }
 h2{
@@ -36,14 +36,14 @@ h2{
 }
 .year{
   font-size:30px;
-  color:#c1c1c1;
+  color:#000000;
 }
 .place{
   color:#222;
   font-size:40px;
 }
 .lower{
-  background:#00A8A9;
+  background:#033052;
   border-radius:0 0 5px 5px;
   font-family:'Advent Pro';
   font-weight:200;
@@ -51,7 +51,7 @@ h2{
   width:100%;
 }
 .clock{
-  background:#00A8A9;
+  background:#033052;
   border-radius:100%;
   box-shadow:0 0 0 15px #f5f5f5,0 10px 10px 5px rgba(0,0,0,0.3);
   height:150px;
@@ -71,7 +71,7 @@ h2{
 }
  
 .min{
-  background:#f5f5f5;
+  background:#FFFFFF;
   height:65px;
   left:50%;  
   position: absolute;
@@ -90,7 +90,7 @@ h2{
   list-style:none;
 }
 .info{
-  color:#fff;
+  color:#FFFFFF;
   float:left;
   height:100%;
   padding-top:10px;
@@ -133,7 +133,7 @@ a{
     <div class="year">Temperature</div>
     <div class="place update" id="temperature">23 &deg;C</div>
   </div>
-  <div style="text-align: center;"><a href="https://www.how2electronics.com" style="align:center">www.how2electronics.com</a></div>
+  <p style="text-align: center "color:DodgerBlue;"><a style="align:center">Real Time Weather Monitoring System</a></p>
   <div class="lower">    
     <ul class="infos">
       <li class="info temp">
