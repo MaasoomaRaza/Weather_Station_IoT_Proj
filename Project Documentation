@@ -1,0 +1,7 @@
+Testing
+We test our Project in real conditions with following methodology:
+	Hardware Testing:  The hardware components of the system, including the NodeMCU and various sensors and breadboard tested for functionality and proper connections. This includes verifying that they are powered on and connected to the appropriate modules and components.
+	Reliability Testing: The system is tested over same time for a number of days to ensure that it is reliable and functioning. The system was tested in open air, closed quarters and at day and night time. It was ensured that with change in weather conditions the readings also change.
+	Energy Efficiency Testing: The system is also tested for energy efficiency to ensure that it is saving energy and reducing electricity consumption. The idea behind is that energy efficiency is basically a design problem, and efficiency in usage of energy can be achieved by fine tuning the system scheduling and transferring filtered data
+	Sometimes some parts of the system went unresponsive due to poor contact on the breadboard. If the ESP8266 becomes unresponsive out of a sudden, first thing we suggest doing would be to check the connections once again
+	If you see a lot of garbage in the Serial Monitor console make sure the baud rate in the console is set accordingly with the ESP8266 settings
