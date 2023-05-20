@@ -1,0 +1,1 @@
+The scope of this project is limited to the development of a local weather station using Usb link for communication between the user's device and the Node MCU presenting a real time weather status of the surrounding areas. The main objective of this paper is to view weather conditions of any location and allows to access the current data of any station.
